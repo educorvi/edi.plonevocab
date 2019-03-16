@@ -7,6 +7,12 @@
   <!-- -*- extra stuff goes here -*- -->
 
     <permission
+        id="edi.plonevocab.AddDictionaryKey"
+        title="edi.plonevocab: Add DictionaryKey"
+    />
+
+
+    <permission
         id="edi.plonevocab.AddMenuDictionary"
         title="edi.plonevocab: Add MenuDictionary"
     />

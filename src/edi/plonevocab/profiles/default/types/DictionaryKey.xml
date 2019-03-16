@@ -1,38 +1,37 @@
 <?xml version="1.0"?>
 <object xmlns:i18n="http://xml.zope.org/namespaces/i18n"
-    name="MenuDictionary"
+    name="DictionaryKey"
     meta_type="Dexterity FTI"
     i18n:domain="edi.plonevocab">
 
   <!-- Basic properties -->
   <property
       i18n:translate=""
-      name="title">MenuDictionary</property>
+      name="title">DictionaryKey</property>
   <property
       i18n:translate=""
-      name="description">A Dictionary Folder for Plone-Menus</property>
+      name="description">A Key for MenuDictionary</property>
 
   <property name="allow_discussion">False</property>
-  <property name="factory">MenuDictionary</property>
+  <property name="factory">DictionaryKey</property>
   <property name="icon_expr"></property>
   <property name="link_target"></property>
 
   <!-- Hierarchy control -->
-  <property name="global_allow">True</property>
-  <property name="filter_content_types">False</property>
+  <property name="global_allow">False</property>
+  <property name="filter_content_types">True</property>
   <property name="allowed_content_types">
-    <element value="DictionaryKey" />
-      <!--
+  <!--
     <element value="Document" />
     <element value="File" />
   -->
   </property>
   <!-- Schema, class and security -->
-  <property name="add_permission">edi.plonevocab.AddMenuDictionary</property>
-  <property name="klass">edi.plonevocab.content.menu_dictionary.MenuDictionary</property>
+  <property name="add_permission">edi.plonevocab.AddDictionaryKey</property>
+  <property name="klass">edi.plonevocab.content.dictionary_key.DictionaryKey</property>
   <property name="model_file"></property>
   <property name="model_source"></property>
-  <property name="schema">edi.plonevocab.content.menu_dictionary.IMenuDictionary</property>
+  <property name="schema">edi.plonevocab.content.dictionary_key.IDictionaryKey</property>
 
   <!-- Enabled behaviors -->
   <property name="behaviors" purge="false">
@@ -61,7 +60,7 @@
   </property>
 
   <!-- View information -->
-  <property name="add_view_expr">string:${folder_url}/++add++MenuDictionary</property>
+  <property name="add_view_expr">string:${folder_url}/++add++DictionaryKey</property>
   <property name="default_view">view</property>
   <property name="default_view_fallback">False</property>
   <property name="immediate_view">view</property>
