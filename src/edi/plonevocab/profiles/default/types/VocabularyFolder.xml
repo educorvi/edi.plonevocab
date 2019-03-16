@@ -4,7 +4,6 @@
     meta_type="Dexterity FTI"
     i18n:domain="edi.plonevocab">
 
-  <!-- Basic properties -->
   <property
       i18n:translate=""
       name="title">VocabularyFolder</property>
@@ -19,13 +18,9 @@
 
   <!-- Hierarchy control -->
   <property name="global_allow">True</property>
-  <property name="filter_content_types">False</property>
+  <property name="filter_content_types">True</property>
   <property name="allowed_content_types">
     <element value="VocabularyTerm" />
-      <!--
-    <element value="Document" />
-    <element value="File" />
-  -->
   </property>
   <!-- Schema, class and security -->
   <property name="add_permission">edi.plonevocab.AddVocabularyFolder</property>

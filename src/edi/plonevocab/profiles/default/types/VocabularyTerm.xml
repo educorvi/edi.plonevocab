@@ -4,7 +4,6 @@
     meta_type="Dexterity FTI"
     i18n:domain="edi.plonevocab">
 
-  <!-- Basic properties -->
   <property
       i18n:translate=""
       name="title">VocabularyTerm</property>
