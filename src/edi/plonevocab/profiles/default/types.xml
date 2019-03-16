@@ -4,4 +4,5 @@
   <!--<object name="example_ct" meta_type="Dexterity FTI"/>-->
   <object meta_type="Dexterity FTI" name="VocabularyFolder"/>
   <object meta_type="Dexterity FTI" name="VocabularyTerm"/>
+  <object meta_type="Dexterity FTI" name="MenuDictionary"/>
 </object>
