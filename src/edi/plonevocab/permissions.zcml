@@ -7,6 +7,12 @@
   <!-- -*- extra stuff goes here -*- -->
 
     <permission
+        id="edi.plonevocab.AddVocabularyTerm"
+        title="edi.plonevocab: Add VocabularyTerm"
+    />
+
+
+    <permission
         id="edi.plonevocab.AddVocabularyFolder"
         title="edi.plonevocab: Add VocabularyFolder"
     />
