@@ -11,11 +11,9 @@ class IVocabularyFolder(model.Schema):
     """ Marker interface and Dexterity Python Schema for VocabularyFolder
     """
 
-    title = schema.TextLine(title=u"Titel")
-
 @implementer(IVocabularyFolder)
 class VocabularyFolder(Container):
     """
     """
-    getVocabulary(self):
+    def getVocabulary(self):
         return SimpleVocabulary([i.getTerm() for i in self.values()])

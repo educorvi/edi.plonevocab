@@ -7,8 +7,8 @@ from zope.interface import implementer
 from edi.plonevocab import _
 
 class IMenuDictionary(model.Schema):
-
-    title = schema.TextLine(title=u"Titel")
+    """
+    """
 
 @implementer(IMenuDictionary)
 class MenuDictionary(Container):

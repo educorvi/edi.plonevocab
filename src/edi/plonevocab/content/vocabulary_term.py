@@ -12,7 +12,6 @@ class IVocabularyTerm(model.Schema):
     """ Marker interface and Dexterity Python Schema for VocabularyTerm
     """
     
-    title = schema.TextLine(title=u"Titel")
     value = schema.TextLine(title=u"Value", description=u"Keine Umlaute, Sonderzeichen, Leerzeichen, eindeutiger Wert innerhalb eines Ordners.")
     token = schema.TextLine(title=u"Token", description=u"keine Umlaute, Sonderzeichen, Leerzeichen, oft werden für Value und Token die\
                                                           selben Werte verwendet.")
@@ -21,5 +20,5 @@ class IVocabularyTerm(model.Schema):
 class VocabularyTerm(Item):
     """
     """
-    getTerm(self):
+    def getTerm(self):
         return SimpleTerm(value=self.value, token=self.token, title=self.title)
