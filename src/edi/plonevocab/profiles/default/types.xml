@@ -6,4 +6,5 @@
   <object meta_type="Dexterity FTI" name="VocabularyTerm"/>
   <object meta_type="Dexterity FTI" name="MenuDictionary"/>
   <object meta_type="Dexterity FTI" name="DictionaryKey"/>
+  <object meta_type="Dexterity FTI" name="Aliases"/>
 </object>

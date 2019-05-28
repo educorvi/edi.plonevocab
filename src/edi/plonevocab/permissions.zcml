@@ -7,6 +7,12 @@
   <!-- -*- extra stuff goes here -*- -->
 
     <permission
+        id="edi.plonevocab.AddAliases"
+        title="edi.plonevocab: Add Aliases"
+    />
+
+        
+    <permission
         id="edi.plonevocab.AddDictionaryKey"
         title="edi.plonevocab: Add DictionaryKey"
     />
