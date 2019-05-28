@@ -7,6 +7,12 @@
   <!-- -*- extra stuff goes here -*- -->
 
     <permission
+        id="edi.plonevocab.AddAlias"
+        title="edi.plonevocab: Add Alias"
+    />
+
+        
+    <permission
         id="edi.plonevocab.AddAliases"
         title="edi.plonevocab: Add Aliases"
     />

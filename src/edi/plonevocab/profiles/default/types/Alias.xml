@@ -1,38 +1,30 @@
 <?xml version="1.0"?>
 <object xmlns:i18n="http://xml.zope.org/namespaces/i18n"
-    name="Aliases"
+    name="Alias"
     meta_type="Dexterity FTI"
     i18n:domain="edi.plonevocab">
 
   <!-- Basic properties -->
   <property
       i18n:translate=""
-      name="title">Aliases</property>
+      name="title">Alias</property>
   <property
       i18n:translate=""
-      name="description">Ordner zur Konfiguration von Alias Vocabulary Einträgen</property>
+      name="description">Alias fuer Vocabulary Term</property>
 
   <property name="allow_discussion">False</property>
-  <property name="factory">Aliases</property>
+  <property name="factory">Alias</property>
   <property name="icon_expr"></property>
   <property name="link_target"></property>
 
   <!-- Hierarchy control -->
-  <property name="global_allow">True</property>
-  <property name="filter_content_types">True</property>
-  <property name="allowed_content_types">
-    <element value="Alias" />
-          <!--
-    <element value="Document" />
-    <element value="File" />
-  -->
-  </property>
+  <property name="global_allow">False</property>
   <!-- Schema, class and security -->
-  <property name="add_permission">edi.plonevocab.AddAliases</property>
-  <property name="klass">edi.plonevocab.content.aliases.Aliases</property>
+  <property name="add_permission">edi.plonevocab.AddAlias</property>
+  <property name="klass">edi.plonevocab.content.alias.Alias</property>
   <property name="model_file"></property>
   <property name="model_source"></property>
-  <property name="schema">edi.plonevocab.content.aliases.IAliases</property>
+  <property name="schema">edi.plonevocab.content.alias.IAlias</property>
 
   <!-- Enabled behaviors -->
   <property name="behaviors" purge="false">
@@ -54,7 +46,7 @@
   </property>
 
   <!-- View information -->
-  <property name="add_view_expr">string:${folder_url}/++add++Aliases</property>
+  <property name="add_view_expr">string:${folder_url}/++add++Alias</property>
   <property name="default_view">view</property>
   <property name="default_view_fallback">False</property>
   <property name="immediate_view">view</property>
