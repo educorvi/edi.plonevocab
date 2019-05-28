@@ -10,6 +10,7 @@ class IDictionaryKey(model.Schema):
     """ Marker interface and Dexterity Python Schema for DictionaryKey
     """
 
+    title = schema.TextLine(title=u"Titel")
     key = schema.TextLine(title=u"Key", description=u"Überschrift des Submenüs")
 
 @implementer(IDictionaryKey)

@@ -10,6 +10,7 @@ from edi.plonevocab import _
 class IVocabularyFolder(model.Schema):
     """ Marker interface and Dexterity Python Schema for VocabularyFolder
     """
+    title = schema.TextLine(title=u'Titel')
 
 @implementer(IVocabularyFolder)
 class VocabularyFolder(Container):
