@@ -15,40 +15,14 @@ class IAlias(model.Schema):
     """ Marker interface and Dexterity Python Schema for Alias
     """
 
-    # directives.widget(level=RadioFieldWidget)
-    # level = schema.Choice(
-    #     title=_(u'Sponsoring Level'),
-    #     vocabulary=LevelVocabulary,
-    #     required=True
-    # )
+    title = schema.TextLine(title=u"Titel es Alias Vocabulary Eintrages")
 
-    # text = RichText(
-    #     title=_(u'Text'),
-    #     required=False
-    # )
+    key = schema.TextLine(title=u"Schlüsselwert",
+                          description=u"Für diesen Wert sollen Alias-Einträge konfiguriert werden.")
 
-    # url = schema.URI(
-    #     title=_(u'Link'),
-    #     required=False
-    # )
-
-    # fieldset('Images', fields=['logo', 'advertisement'])
-    # logo = namedfile.NamedBlobImage(
-    #     title=_(u'Logo'),
-    #     required=False,
-    # )
-
-    # advertisement = namedfile.NamedBlobImage(
-    #     title=_(u'Advertisement (Gold-sponsors and above)'),
-    #     required=False,
-    # )
-
-    # directives.read_permission(notes='cmf.ManagePortal')
-    # directives.write_permission(notes='cmf.ManagePortal')
-    # notes = RichText(
-    #     title=_(u'Secret Notes (only for site-admins)'),
-    #     required=False
-    # )
+    aliasentries = schema.List(title=u"Alias-Einträge",
+                               value_type=schema.TextLine(),
+                               description=u"Ein Eintrag pro Zeile")
 
 
 @implementer(IAlias)
